@@ -29,10 +29,10 @@
 
         layer_3 {
             bindings = <
-&kp LALT   &trans  &trans  &trans    &trans  &trans    &trans  &trans  &trans             &trans  &trans  &kp RALT
-&kp LCTRL  &trans  &trans  &trans    &trans  &trans    &trans  &trans  &trans             &trans  &trans  &kp RCTRL
-&trans     &trans  &trans  &trans    &trans  &trans    &trans  &trans  &trans             &trans  &trans  &trans
-                           &kp LGUI  &trans  &trans    &trans  &trans  &kp RIGHT_COMMAND
+&kp LALT   &trans  &trans  &trans    &trans  &trans            &trans  &trans  &trans             &trans  &trans  &kp RALT
+&kp LCTRL  &trans  &trans  &trans    &trans  &trans            &trans  &trans  &trans             &trans  &trans  &kp RCTRL
+&trans     &trans  &trans  &trans    &trans  &trans            &trans  &trans  &trans             &trans  &trans  &trans
+                           &kp LGUI  &trans  &kp LEFT_SHIFT    &trans  &trans  &kp RIGHT_COMMAND
             >;
         };
 
@@ -59,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC     &trans        &trans        &trans        &trans        &trans          &kp N1     &kp N2  &kp N3   &trans    &trans    &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp N4     &kp N5  &kp N6   &kp N0    &kp UP    &kp RIGHT
-&trans      &trans        &trans        &trans        &trans        &trans          &kp N7     &kp N8  &kp N9   &kp LEFT  &kp DOWN  &trans
-                                        &kp LGUI      &trans        &kp LSHFT       &kp SPACE  &trans  &kp RET
+&kp ESC    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp N1     &kp N2  &kp N3   &trans    &trans    &kp BSPC
+&kp LCTRL  &trans        &trans        &trans        &trans        &trans          &kp N4     &kp N5  &kp N6   &kp N0    &kp UP    &kp RIGHT
+&trans     &trans        &trans        &bt BT_CLR    &trans        &trans          &kp N7     &kp N8  &kp N9   &kp LEFT  &kp DOWN  &trans
+                                       &kp LGUI      &trans        &kp LSHFT       &kp SPACE  &trans  &kp RET
             >;
         };
     };
