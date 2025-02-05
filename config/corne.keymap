@@ -14,7 +14,7 @@
         compatible = "zmk,combos";
 
         ComboLayer {
-            bindings = <&mo 0>;
+            bindings = <&mo 3>;
             key-positions = <37 40>;
         };
     };
